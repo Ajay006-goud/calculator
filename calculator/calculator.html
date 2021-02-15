@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			background-color:orange;
+		
+
+		}
+		#clear
+		{
+          width: 332px;
+		}
+		.formstyle
+		{
+			width:333px;
+			height: 365px;
+			border:2px solid black;
+			margin:auto;
+			
+		}
+		#answerstyle
+		{
+			width: 269px;
+			padding:30px;
+		    background-image:url("2.jpg");
+		    background-repeat:no-repeat;
+		    background-size: cover;
+		    color: white;
+		}
+		input
+		{
+			width:80px;
+			height: 50px;
+		
+			color:black;
+			font-size:30px;
+		}
+		h1
+		{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1 >Calculator</h1>
+<div class="formstyle">
+	<form name="forms">
+		<input type="text" name="answer" id="answerstyle"><br>
+        <input type="button" value="7" onclick="forms.answer.value+='7'";>
+		<input type="button" value="8" onclick="forms.answer.value+='8'";>
+		<input type="button" value="9" onclick="forms.answer.value+='9'";>
+		<input type="button" value="*" onclick="forms.answer.value+='*'";>
+		<br>
+
+
+		<input type="button" value="4" onclick="forms.answer.value+='4'";>
+		<input type="button" value="5" onclick="forms.answer.value+='5'";>
+		<input type="button" value="6" onclick="forms.answer.value+='6'";>
+		<input type="button" value="-" onclick="forms.answer.value+='-'";>
+		<br>
+
+		<input type="button" value="1" onclick="forms.answer.value+='1'";>
+		<input type="button" value="2" onclick="forms.answer.value+='2'";>
+		<input type="button" value="3" onclick="forms.answer.value+='3'";>
+		<input type="button" value="+" onclick="forms.answer.value+='+'";>
+		<br>
+
+        <input type="button" value="/" onclick="forms.answer.value+='/'";>
+		<input type="button" value="0" onclick="forms.answer.value+='0'";>
+		<input type="button" value="." onclick="forms.answer.value+='.'";>
+		<input type="button" value="=" onclick="forms.answer.value=eval(forms.answer.value)";>
+        <br>
+       <input type="button" value="clear" onclick="forms.answer.value=''" id="clear";>
+
+
+	</form>
+	
+</div>
+</body>
+</html>
